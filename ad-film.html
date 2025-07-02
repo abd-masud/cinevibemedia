@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khanna Saab Production</title>
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tw-configue.js"></script>
+</head>
+
+<body class="font-josefin">
+
+    <!-- Navigation bar -->
+    <nav class="bg-black px-6 py-4 flex items-center justify-between relative z-50 text-[14px] sticky top-0 w-full">
+        <div class="flex items-center space-x-4">
+            <img src="assets/img/logo.png" alt="KS Logo" class="h-8 xl:h-12 transition-all duration-300" />
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="xl:hidden text-white focus:outline-none transition-all duration-500">
+            <svg id="menu-icon" class="h-6 w-6 transition-all duration-300" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="close-icon" class="h-6 w-6 transition-all duration-800 hidden" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden xl:flex text-white gap-5 transition-all duration-300">
+            <li class="mt-5"><a href="/" class="hover:text-[#C1AB65] py-5 transition-all duration-300">Home</a></li>
+
+            <li class="relative group">
+                <button class="hover:text-[#C1AB65] py-5 flex items-center gap-1 transition-all duration-300">Film
+                    Production
+                    <svg class="fill-white h-3 w-3 transition-transform duration-300 group-hover:rotate-180"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg></button>
+                <ul
+                    class="absolute left-0 bg-white text-black shadow-md rounded w-56 opacity-0 group-hover:opacity-100 invisible group-hover:visible mt-3 group-hover:mt-0 divide-y divide-gray-300 divide-dashed overflow-hidden transition-all duration-300">
+                    <li><a href="/feature-film.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] bg-white transition-all duration-300">Feature
+                            Films</a></li>
+                    <li><a href="short-film.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] bg-white transition-all duration-300">Short
+                            Films</a></li>
+                    <li><a href="/documentary-film.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] bg-white transition-all duration-300">Documentary
+                            Films</a></li>
+                    <li><a href="/ad-film.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] bg-white transition-all duration-300">Ad
+                            Films</a></li>
+                    <li><a href="/music-videos.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] bg-white transition-all duration-300">Music
+                            Videos</a></li>
+                    <li><a href="/corporate-videos.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] bg-white transition-all duration-300">Corporate
+                            Videos</a></li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <button class="hover:text-[#C1AB65] py-5 flex items-center gap-1 transition-all duration-300">Music
+                    Production <svg class="fill-white h-3 w-3 transition-transform duration-300 group-hover:rotate-180"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg></button>
+                <ul
+                    class="absolute left-0 bg-white text-black shadow-md rounded w-56 opacity-0 group-hover:opacity-100 invisible group-hover:visible mt-3 group-hover:mt-0 divide-y divide-gray-300 divide-dashed overflow-hidden transition-all duration-300">
+                    <li><a href="/song-writing.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Song
+                            Writing</a></li>
+                    <li><a href="/sound-designing.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Sound
+                            Designing</a></li>
+                    <li><a href="/sound-recording.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Sound
+                            Recording</a></li>
+                    <li><a href="/mixing-and-mastering.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Mixing &
+                            Mastering</a></li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <button
+                    class="hover:text-[#C1AB65] py-5 flex items-center gap-1 transition-all duration-300">Photography
+                    <svg class="fill-white h-3 w-3 transition-transform duration-300 group-hover:rotate-180"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg></button>
+                <ul
+                    class="absolute left-0 bg-white text-black shadow-md rounded w-56 opacity-0 group-hover:opacity-100 invisible group-hover:visible mt-3 group-hover:mt-0 divide-y divide-gray-300 divide-dashed overflow-hidden transition-all duration-300">
+                    <li><a href="/wedding-photography.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Wedding
+                            Photography</a></li>
+                    <li><a href="/pre-wedding-photography.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Pre Wedding
+                            Photography</a>
+                    </li>
+                    <li><a href="/event-photography.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Event
+                            Photography</a></li>
+                    <li><a href="/maternity-photography.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Maternity
+                            Photography</a></li>
+                    <li><a href="/corporate-photography.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Corporate
+                            Photography</a></li>
+                    <li><a href="/kids-photography.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Kids
+                            Photography</a></li>
+                    <li><a href="/fashion-photography.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Fashion /
+                            Photography</a></li>
+                    <li><a href="/e-commerce-photography.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">E-Commerce
+                            Photography</a></li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <button class="hover:text-[#C1AB65] py-5 flex items-center gap-1 transition-all duration-300">Event
+                    Management <svg class="fill-white h-3 w-3 transition-transform duration-300 group-hover:rotate-180"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg></button>
+                <ul
+                    class="absolute left-0 bg-white text-black shadow-md rounded w-56 opacity-0 group-hover:opacity-100 invisible group-hover:visible mt-3 group-hover:mt-0 divide-y divide-gray-300 divide-dashed overflow-hidden transition-all duration-300">
+                    <li><a href="/corporate-event.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Corporate
+                            Event</a></li>
+                    <li><a href="/music-concert.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Music
+                            Concert</a></li>
+                    <li><a href="/wedding-planning.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Wedding
+                            Planning</a></li>
+                    <li><a href="/birthday-party-planning.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Birthday /
+                            Party Planning</a></li>
+                    <li><a href="/road-shows-mall-shows.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Road Shows
+                            / Mall Shows</a></li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <button class="hover:text-[#C1AB65] py-5 flex items-center gap-1 transition-all duration-300">Celebrity
+                    Management
+                    <svg class="fill-white h-3 w-3 transition-transform duration-300 group-hover:rotate-180"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg></button>
+                <ul
+                    class="absolute left-0 bg-white text-black shadow-md rounded w-56 opacity-0 group-hover:opacity-100 invisible group-hover:visible mt-3 group-hover:mt-0 divide-y divide-gray-300 divide-dashed overflow-hidden transition-all duration-300">
+                    <li><a href="/actors.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Actors</a>
+                    </li>
+                    <li><a href="/singers-musician.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Singers /
+                            Musician</a></li>
+                    <li><a href="/youtuber.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Youtuber</a>
+                    </li>
+                    <li><a href="/comedians.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Comedians</a>
+                    </li>
+                    <li><a href="/dance-group.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Dance
+                            Group</a></li>
+                    <li><a href="/sports-professionals.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Sports
+                            Professionals</a></li>
+                    <li><a href="/social-workers.html"
+                            class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Social
+                            Workers</a></li>
+                </ul>
+            </li>
+            <li class="mt-5"><a href="/studio-on-hire.html"
+                    class="hover:text-[#C1AB65] py-5 transition-all duration-300">Studio On
+                    Hire</a></li>
+            <li class="mt-5"><a href="/modelling-agency.html"
+                    class="hover:text-[#C1AB65] py-5 transition-all duration-300">Modelling
+                    Agency</a></li>
+            <li class="mt-5"><a href="/gallery.html"
+                    class="hover:text-[#C1AB65] py-5 transition-all duration-300">Gallery</a></li>
+            <li class="mt-5"><a href="/contact.html"
+                    class="hover:text-[#C1AB65] py-5 transition-all duration-300">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu xl:hidden absolute top-full left-0 right-0 bg-black w-full px-6">
+            <ul class="text-white space-y-4 py-4">
+                <li><a href="#" class="hover:text-[#C1AB65] block py-2 transition-all duration-300">Home</a></li>
+
+                <li class="relative">
+                    <button
+                        class="mobile-dropdown-btn hover:text-[#C1AB65] w-full flex justify-between items-center py-2 transition-all duration-300">Film
+                        Production
+                        <svg class="dropdown-arrow fill-white h-4 w-4 transform transition-transform duration-300"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-content pl-4 space-y-2 transition-all duration-300">
+                        <li><a href="/feature-film.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Feature
+                                Films</a></li>
+                        <li><a href="short-film.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Short
+                                Films</a></li>
+                        <li><a href="/documentary-film.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Documentary
+                                Films</a></li>
+                        <li><a href="/ad-film.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Ad
+                                Films</a></li>
+                        <li><a href="/music-videos.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Music
+                                Videos</a></li>
+                        <li><a href="/corporate-videos.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Corporate
+                                Videos</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <button
+                        class="mobile-dropdown-btn hover:text-[#C1AB65] w-full flex justify-between items-center py-2 transition-all duration-300">Music
+                        Production
+                        <svg class="dropdown-arrow fill-white h-4 w-4 transform transition-transform duration-300"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-content pl-4 space-y-2 transition-all duration-300">
+                        <li><a href="/song-writing.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Song
+                                Writing</a></li>
+                        <li><a href="/sound-designing.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Sound
+                                Designing</a></li>
+                        <li><a href="/sound-recording.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Sound
+                                Recording</a></li>
+                        <li><a href="/mixing-and-mastering.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Mixing
+                                &
+                                Mastering</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <button
+                        class="mobile-dropdown-btn hover:text-[#C1AB65] w-full flex justify-between items-center py-2 transition-all duration-300">Photography
+                        <svg class="dropdown-arrow fill-white h-4 w-4 transform transition-transform duration-300"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-content pl-4 space-y-2 transition-all duration-300">
+                        <li><a href="/wedding-photography.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Wedding
+                                Photography</a></li>
+                        <li><a href="/pre-wedding-photography.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Pre
+                                Wedding
+                                Photography</a>
+                        </li>
+                        <li><a href="/event-photography.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Event
+                                Photography</a></li>
+                        <li><a href="/maternity-photography.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Maternity
+                                Photography</a></li>
+                        <li><a href="/corporate-event.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Corporate
+                                Photography</a></li>
+                        <li><a href="/kids-photography.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Kids
+                                Photography</a></li>
+                        <li><a href="/fashion-photography.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Fashion
+                                /
+                                Photography</a></li>
+                        <li><a href="/e-commerce-photography.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">E-Commerce
+                                Photography</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <button
+                        class="mobile-dropdown-btn hover:text-[#C1AB65] w-full flex justify-between items-center py-2 transition-all duration-300">Event
+                        Management
+                        <svg class="dropdown-arrow fill-white h-4 w-4 transform transition-transform duration-300"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-content pl-4 space-y-2 transition-all duration-300">
+                        <li><a href="/corporate-event.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Corporate
+                                Event</a></li>
+                        <li><a href="/music-concert.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Music
+                                Concert</a></li>
+                        <li><a href="/wedding-planning.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Wedding
+                                Planning</a></li>
+                        <li><a href="/birthday-party-planning.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Birthday /
+                                Party Planning</a></li>
+                        <li><a href="/road-shows-mall-shows.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Road
+                                Shows
+                                / Mall Shows</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <button
+                        class="mobile-dropdown-btn hover:text-[#C1AB65] w-full flex justify-between items-center py-2 transition-all duration-300">Celebrity
+                        Management
+                        <svg class="dropdown-arrow fill-white h-4 w-4 transform transition-transform duration-300"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-content pl-4 space-y-2 transition-all duration-300">
+                        <li><a href="/actors.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Actors</a>
+                        </li>
+                        <li><a href="/singers-musician.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Singers /
+                                Musician</a></li>
+                        <li><a href="/youtuber.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Youtuber</a>
+                        </li>
+                        <li><a href="/comedians.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Comedians</a>
+                        </li>
+                        <li><a href="/dance-group.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Dance
+                                Group</a></li>
+                        <li><a href="/sports-professionals.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Sports
+                                Professionals</a></li>
+                        <li><a href="/social-workers.html"
+                                class="block px-4 py-2 hover:text-[#C1AB65] transition-all duration-300">Social
+                                Workers</a></li>
+                    </ul>
+                </li>
+                <li><a href="/studio-on-hire.html"
+                        class="hover:text-[#C1AB65] block py-2 transition-all duration-300">Studio On Hire</a>
+                </li>
+                <li><a href="/modelling-agency.html"
+                        class="hover:text-[#C1AB65] block py-2 transition-all duration-300">Modelling Agency</a>
+                </li>
+                <li><a href="/gallery.html"
+                        class="hover:text-[#C1AB65] block py-2 transition-all duration-300">Gallery</a></li>
+                <li><a href="/contact.html"
+                        class="hover:text-[#C1AB65] block py-2 transition-all duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="bg-hero-pattern bg-cover bg-center">
+        <div class=" text-white flex flex-col items-center bg-black bg-opacity-50 md:py-20 py-10">
+            <h1 class="text-[30px] font-bold">AD Films</h1>
+            <div class="flex items-center">
+                <p class="block">Home</p>
+                <div class="h-[6px] w-[6px] mx-3 rotate-45 bg-[#C1AB65]"></div>
+                <p>Film Production</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="bg-[#0C0C0C]">
+        <div class=" max-w-screen-xl mx-auto px-4 md:py-20 py-10 flex lg:flex-row flex-col gap-10">
+            <div class="">
+                <h2 class="font-bold text-[25px] text-white mb-5 uppercase">AD Films</h2>
+                <img class="h-auto w-full" src="assets/img/film-production/ad-film.jpg" alt="ad-film">
+                <div class="w-full my-5 mb-10">
+                    <p class="text-white text-justify mb-3">Ad Films are one of the most effective way when it comes to
+                        capturing the attention of the audience. Reelonsocial ad
+                        film services will represent your company or product in a thoughtful, imaginative and convincing
+                        manner. Our Ad Films
+                        have the potential to influence the consumers mind thus enabling them to change their buying
+                        perceptions. Ad Films can
+                        help promote a brand, company or business by bringing customers in the most effective and
+                        captivating way. Our Ad
+                        Filmmakers work closely with our clients to deliver the best possible results.</p>
+                    <p class="text-white text-justify">If you have to rise above them and pull your brand from “me too”
+                        category then indeed you need a descent Ad film maker
+                        or an Ad film production house that can translate your goals into reality by converting your
+                        product into a mass appeal
+                        product.</p>
+                </div>
+                <div class="grid sm:grid-cols-3 grid-cols-1 gap-3">
+                    <img src="assets/img/film-production/ad-film.jpg" alt="ad-film">
+                    <img src="assets/img/film-production/ad-film.jpg" alt="ad-film">
+                    <img src="assets/img/film-production/ad-film.jpg" alt="ad-film">
+                </div>
+            </div>
+            <div class="w-full">
+                <h2 class="font-bold text-[25px] text-white mb-5">SERVICES</h2>
+                <div class="flex flex-col gap-3">
+                    <a class="flex items-center text-white hover:text-[#C1AB65] transition-all duration-300 group"
+                        href="/feature-film.html">
+                        <div
+                            class="h-[6px] w-[6px] mr-3 rotate-45 group-hover:rotate-0 bg-[#C1AB65] transition-all duration-300">
+                        </div>
+                        <p>Film Production</p>
+                    </a>
+                    <a class="flex items-center text-white hover:text-[#C1AB65] transition-all duration-300 group"
+                        href="/song-writing.html">
+                        <div
+                            class="h-[6px] w-[6px] mr-3 rotate-45 group-hover:rotate-0 bg-[#C1AB65] transition-all duration-300">
+                        </div>
+                        <p>Music Production</p>
+                    </a>
+                    <a class="flex items-center text-white hover:text-[#C1AB65] transition-all duration-300 group"
+                        href="/wedding-photography.html">
+                        <div
+                            class="h-[6px] w-[6px] mr-3 rotate-45 group-hover:rotate-0 bg-[#C1AB65] transition-all duration-300">
+                        </div>
+                        <p>Photography</p>
+                    </a>
+                    <a class="flex items-center text-white hover:text-[#C1AB65] transition-all duration-300 group"
+                        href="/corporate-event.html">
+                        <div
+                            class="h-[6px] w-[6px] mr-3 rotate-45 group-hover:rotate-0 bg-[#C1AB65] transition-all duration-300">
+                        </div>
+                        <p>Event Management</p>
+                    </a>
+                    <a class="flex items-center text-white hover:text-[#C1AB65] transition-all duration-300 group"
+                        href="/corporate-event.html">
+                        <div
+                            class="h-[6px] w-[6px] mr-3 rotate-45 group-hover:rotate-0 bg-[#C1AB65] transition-all duration-300">
+                        </div>
+                        <p>Celebrity Management</p>
+                    </a>
+                    <a class="flex items-center text-white hover:text-[#C1AB65] transition-all duration-300 group"
+                        href="/modelling-agency.html">
+                        <div
+                            class="h-[6px] w-[6px] mr-3 rotate-45 group-hover:rotate-0 bg-[#C1AB65] transition-all duration-300">
+                        </div>
+                        <p>Modelling Agency</p>
+                    </a>
+                    <a class="flex items-center text-white hover:text-[#C1AB65] transition-all duration-300 group"
+                        href="/road-shows-mall-shows.html">
+                        <div
+                            class="h-[6px] w-[6px] mr-3 rotate-45 group-hover:rotate-0 bg-[#C1AB65] transition-all duration-300">
+                        </div>
+                        <p>Road / Mall Shows</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black">
+        <div
+            class="text-white py-12 px-6 max-w-screen-xl mx-auto px-4 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10">
+            <div>
+                <img src="assets/img/logo.png" alt="KS Logo" class="w-20 mb-4">
+                <p class="text-sm leading-relaxed">
+                    Khanna Saab Productions is a complete production house which covers everything from film
+                    production -
+                    music production - photography - acting training - celebrity management - event management -
+                    celebrity
+                    interviews - brand promotion.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a class="bg-white h-8 w-8 p-3 flex justify-center items-center text-black rounded-full"
+                        href="#"><svg viewBox="0 0 320 512">
+                            <path
+                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                        </svg></a>
+                    <a class="bg-white h-8 w-8 p-2 flex justify-center items-center text-black rounded-full"
+                        href="#"><svg viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a class="bg-white h-8 w-8 p-2 flex justify-center items-center text-black rounded-full"
+                        href="#"><svg viewBox="0 0 576 512">
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[20px] mb-4">Useful Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/" class="hover:text-[#C1AB65] transition-all duration-300">Home</a></li>
+                    <li><a href="/about.html" class="hover:text-[#C1AB65] transition-all duration-300">About</a></li>
+                    <li><a href="/gallery.html" class="hover:text-[#C1AB65] transition-all duration-300">Gallery</a>
+                    </li>
+                    <li><a href="/modelling-agency.html"
+                            class="hover:text-[#C1AB65] transition-all duration-300">Modelling Agency</a>
+                    </li>
+                    <li><a href="/contact.html" class="hover:text-[#C1AB65] transition-all duration-300">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[20px] mb-4">Useful Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/feature-film.html" class="hover:text-[#C1AB65] transition-all duration-300">Film
+                            Productions</a>
+                    </li>
+                    <li><a href="/song-writing.html" class="hover:text-[#C1AB65] transition-all duration-300">Music
+                            Productions</a>
+                    </li>
+                    <li><a href="/wedding-photography.html"
+                            class="hover:text-[#C1AB65] transition-all duration-300">Photography</a></li>
+                    <li><a href="/actors.html" class="hover:text-[#C1AB65] transition-all duration-300">Acting
+                            Training</a>
+                    </li>
+                    <li><a href="/corporate-event.html"
+                            class="hover:text-[#C1AB65] transition-all duration-300">Celebrity
+                            Management</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-[20px] mb-4">Get In Touch</h4>
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <div class="flex items-center">
+                            <span class="mr-2"><svg class="fill-white h-3 w-3 -mt-1" viewBox="0 0 512 512">
+                                    <path
+                                        d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
+                                </svg></span>
+                            <span class="text-[16px]">Phone:</span>
+                        </div>
+                        <span class="ml-5 text-gray-400">+91-8826071732</span>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <span class="mr-2"><svg class="fill-white h-3 w-3 -mt-1" viewBox="0 0 512 512">
+                                    <path
+                                        d="M64 208.1L256 65.9 448 208.1l0 47.4L289.5 373c-9.7 7.2-21.4 11-33.5 11s-23.8-3.9-33.5-11L64 255.5l0-47.4zM256 0c-12.1 0-23.8 3.9-33.5 11L25.9 156.7C9.6 168.8 0 187.8 0 208.1L0 448c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-239.9c0-20.3-9.6-39.4-25.9-51.4L289.5 11C279.8 3.9 268.1 0 256 0z" />
+                                </svg></span>
+                            <span class="text-[16px]">Email:</span>
+                        </div>
+                        <span class="ml-5 text-gray-400">info@theksp.co.in</span>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <span class="mr-2"><svg class="fill-white h-3 w-3 -mt-1" viewBox="0 0 512 512">
+                                    <path
+                                        d="M64 208.1L256 65.9 448 208.1l0 47.4L289.5 373c-9.7 7.2-21.4 11-33.5 11s-23.8-3.9-33.5-11L64 255.5l0-47.4zM256 0c-12.1 0-23.8 3.9-33.5 11L25.9 156.7C9.6 168.8 0 187.8 0 208.1L0 448c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-239.9c0-20.3-9.6-39.4-25.9-51.4L289.5 11C279.8 3.9 268.1 0 256 0z" />
+                                </svg></span>
+                            <span class="text-[16px]">Email:</span>
+                        </div>
+                        <span class="ml-5 text-gray-400">contact@theksp.co.in</span>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <span class="mr-2"><svg class="fill-white h-3 w-3 -mt-1" viewBox="0 0 384 512">
+                                    <path
+                                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                                </svg></span>
+                            <span class="text-[16px]">
+                                Address:
+                            </span>
+                        </div>
+                        <span class="ml-5 text-gray-400">E BLOCK HOUSE NO 76 Basement, near PVR Anupam Saket, New
+                            Delhi, Delhi 110017</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p class="text-white text-center py-5">© Copyright. All Right Reserved. Website Designed By <a
+                    class="text-[#C1AB65] hover:text-white transition-all duration-300" href="/">SM Innovative
+                    Solutions</a></p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
