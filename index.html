@@ -4,9 +4,12 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Khanna Saab Production</title>
+	<title>Cine Vibe Media</title>
 	<link rel="shortcut icon" href="assets/img/logo.png">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="assets/js/tw-configue.js"></script>
@@ -389,14 +392,55 @@
 	</nav>
 
 	<!-- Hero section slider -->
+	<header>
+		<div class="slider-hero w-full">
+			<div class="bg-no-repeat bg-cover"
+				style="background-image: url('assets/img/film-production/feature-film.jpg');">
+				<div
+					class="px-4 flex flex-col justify-center items-center gap-5 lg:py-[250px] md:py-[200px] sm:py-[150px] py-[100px] bg-black bg-opacity-40">
+					<h1 class="md:text-[80px] text-[35px] text-white font-bold uppercase text-center">Welcome To</h1>
+					<p class="text-white text-[24px]">Cine Vive Media</p>
+					<div class="mt-5">
+						<a class="uppercase bg-white px-10 py-4 rounded-lg" href="/">View More</a>
+					</div>
+				</div>
+			</div>
+			<div class="bg-no-repeat bg-cover"
+				style="background-image: url('assets/img/music-production/sound-designing.jpg');">
+				<div
+					class="px-4 flex flex-col justify-center items-center gap-5 lg:py-[250px] md:py-[200px] sm:py-[150px] py-[100px] bg-black bg-opacity-40">
+					<h1 class="md:text-[80px] text-[35px] text-white font-bold uppercase text-center">Song Designing
+					</h1>
+					<p class="text-white text-[24px]">Cine Vive Media</p>
+					<div class="mt-5">
+						<a class="uppercase bg-white px-10 py-4 rounded-lg" href="/">View More</a>
+					</div>
+				</div>
+			</div>
+			<div class="bg-no-repeat bg-cover"
+				style="background-image: url('assets/img/event-management/corporate-event.jpg');">
+				<div
+					class="px-4 flex flex-col justify-center items-center gap-5 lg:py-[250px] md:py-[200px] sm:py-[150px] py-[100px] bg-black bg-opacity-40">
+					<h1 class="md:text-[80px] text-[35px] text-white font-bold uppercase text-center">Corporate Event
+					</h1>
+					<p class="text-white text-[24px]">Cine Vive Media</p>
+					<div class="mt-5">
+						<a class="uppercase bg-white px-10 py-4 rounded-lg" href="/">View More</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
 	<!-- About Us -->
 	<section class="bg-black md:py-20 py-10">
-		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Khanna Saab Productions</span>
+		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Cine Vibe Media</span>
 		<h2 class="text-white text-[45px] text-center uppercase">About Us</h2>
 		<div class="max-w-screen-xl mx-auto px-4 pt-10">
 			<div class="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-0">
 				<div class="text-white">
-					<p class="mb-3">Khanna Saab Productions Is a Complete Production House Which
+					<p class="mb-3">Cine Vibe Media Is a Complete Production House Which
 						Covers Everything
 						From
 						Film
@@ -406,7 +450,7 @@
 						- Celebrity
 						Interviews-
 						Brand Promotion.</p>
-					<p class="mb-8">Khanna Saab Productions is making a name for itself in the
+					<p class="mb-8">Cine Vibe Media is making a name for itself in the
 						league of top video
 						production
 						companies
@@ -486,7 +530,7 @@
 
 	<!-- Brands -->
 	<section class="md:py-20 py-10">
-		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Khanna Saab Productions</span>
+		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Cine Vibe Media</span>
 		<h2 class="text-black text-[45px] text-center uppercase">Brands</h2>
 		<div class="max-w-screen-xl mx-auto px-4 grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-5">
 			<img class="border w-full p-8 shadow-md" src="assets/img/brands/b1.png" alt="brand">
@@ -510,13 +554,18 @@
 
 	<!-- Click & Watch -->
 	<section class="bg-black md:py-20 py-10">
-		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Khanna Saab Productions</span>
+		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Cine Vibe Media</span>
 		<h2 class="text-white text-[45px] text-center uppercase">Click & Watch</h2>
+		<div class="slider-click-watch w-full max-w-screen-xl mx-auto px-4">
+			<div><img src="assets/img/index/youtube.jpg" class="w-full" /></div>
+			<div><img src="assets/img/index/youtube.jpg" class="w-full" /></div>
+			<div><img src="assets/img/index/youtube.jpg" class="w-full" /></div>
+		</div>
 	</section>
 
 	<!-- Videos -->
 	<section class="bg-black md:py-20 py-10">
-		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Khanna Saab Productions</span>
+		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Cine Vibe Media</span>
 		<h2 class="text-white text-[45px] text-center uppercase">Our Videos</h2>
 		<div class="max-w-screen-xl mx-auto px-4 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
 			<video class="border w-full h-full p-4" src="assets/video/v1.mp4" autoplay muted loop playsinline></video>
@@ -530,14 +579,95 @@
 
 	<!-- Productions -->
 	<section class="bg-black md:py-20 py-10">
-		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Khanna Saab Productions</span>
-		<h2 class="text-white text-[45px] text-center uppercase">Productions</h2>
+		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Cine Vibe Media</span>
+		<h2 class="text-white text-[45px] text-center uppercase mb-5">Productions</h2>
+		<div class="max-w-screen-xl mx-auto px-4 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+			<div class="border border-gray-700 px-5 py-10 rounded-lg">
+				<img class="w-full mb-5" src="assets/img/index/p1.jpg" alt="production">
+				<p class="text-[#C1AB65] uppercase text-sm mb-5">Khanna Saab</p>
+				<h3 class="text-[20px] text-white font-semibold">File Production</h3>
+				<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore
+					et dolore magna .</p>
+				<a class="text-[#C1AB65]" href="#">Read More...</a>
+			</div>
+			<div class="border border-gray-700 px-5 py-10 rounded-lg">
+				<img class="w-full mb-5" src="assets/img/index/p2.jpg" alt="production">
+				<p class="text-[#C1AB65] uppercase text-sm mb-5">Khanna Saab</p>
+				<h3 class="text-[20px] text-white font-semibold">Music Recording</h3>
+				<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore
+					et dolore magna .</p>
+				<a class="text-[#C1AB65]" href="#">Read More...</a>
+			</div>
+			<div class="border border-gray-700 px-5 py-10 rounded-lg">
+				<img class="w-full mb-5" src="assets/img/index/p3.jpg" alt="production">
+				<p class="text-[#C1AB65] uppercase text-sm mb-5">Khanna Saab</p>
+				<h3 class="text-[20px] text-white font-semibold">File Production</h3>
+				<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore
+					et dolore magna .</p>
+				<a class="text-[#C1AB65]" href="#">Read More...</a>
+			</div>
+		</div>
 	</section>
 
 	<!-- Testimonials -->
-	<section class="bg-black md:py-20 py-10">
-		<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Khanna Saab Productions</span>
-		<h2 class="text-white text-[45px] text-center uppercase">What Customer's Say</h2>
+	<section class="bg-testimonial bg-cover bg-center">
+		<div class="bg-black bg-opacity-80 md:py-20 py-10">
+			<span class="text-[#C1AB65] text-[18px] text-center block uppercase">The Cine Vibe Media</span>
+			<h2 class="text-white text-[45px] text-center uppercase">What Customer's Say</h2>
+			<div class="slider-testimonials w-full max-w-screen-md mx-auto px-4 text-center text-lg">
+				<div class="flex flex-col items-center text-center">
+					<div class="mt-5">
+						<svg class="fill-[#A7A7A0] h-16 w-16 mx-auto" viewBox="0 0 448 512">
+							<path
+								d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+						</svg>
+					</div>
+					<p class="text-white mb-5">
+						There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+						alteration in
+						some form, by injected humour, or randomised words which don't look even slightly believable. If
+						you are going
+						to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+					</p>
+					<span class="text-white border-b">Machiel Shon</span>
+				</div>
+				<div class="flex flex-col items-center text-center">
+					<div class="mt-5">
+						<svg class="fill-[#A7A7A0] h-16 w-16 mx-auto" viewBox="0 0 448 512">
+							<path
+								d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+						</svg>
+					</div>
+					<p class="text-white mb-5">
+						There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+						alteration in
+						some form, by injected humour, or randomised words which don't look even slightly believable. If
+						you are going
+						to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+					</p>
+					<span class="text-white border-b">Machiel Shon</span>
+				</div>
+				<div class="flex flex-col items-center text-center">
+					<div class="mt-5">
+						<svg class="fill-[#A7A7A0] h-16 w-16 mx-auto" viewBox="0 0 448 512">
+							<path
+								d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+						</svg>
+					</div>
+					<p class="text-white mb-5">
+						There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+						alteration in
+						some form, by injected humour, or randomised words which don't look even slightly believable. If
+						you are going
+						to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.
+					</p>
+					<span class="text-white border-b">Machiel Shon</span>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- Footer -->
@@ -547,7 +677,7 @@
 			<div>
 				<img src="assets/img/logo.png" alt="KS Logo" class="w-20 mb-4">
 				<p class="text-sm leading-relaxed">
-					Khanna Saab Productions is a complete production house which covers everything
+					Cine Vibe Media is a complete production house which covers everything
 					from film
 					production -
 					music production - photography - acting training - celebrity management - event
@@ -573,7 +703,6 @@
 						</svg></a>
 				</div>
 			</div>
-
 			<div>
 				<h4 class="font-semibold text-[20px] mb-4">Useful Links</h4>
 				<ul class="space-y-2 text-sm">
@@ -591,7 +720,6 @@
 					</li>
 				</ul>
 			</div>
-
 			<div>
 				<h4 class="font-semibold text-[20px] mb-4">Useful Links</h4>
 				<ul class="space-y-2 text-sm">
@@ -624,7 +752,7 @@
 								</svg></span>
 							<span class="text-[16px]">Phone:</span>
 						</div>
-						<span class="ml-5 text-gray-400">+91-8826071732</span>
+						<span class="ml-5 text-gray-400">+880 1792095788</span>
 					</li>
 					<li>
 						<div class="flex items-center">
@@ -634,7 +762,7 @@
 								</svg></span>
 							<span class="text-[16px]">Email:</span>
 						</div>
-						<span class="ml-5 text-gray-400">info@theksp.co.in</span>
+						<span class="ml-5 text-gray-400">info@cinevibemedia.com</span>
 					</li>
 					<li>
 						<div class="flex items-center">
@@ -644,7 +772,7 @@
 								</svg></span>
 							<span class="text-[16px]">Email:</span>
 						</div>
-						<span class="ml-5 text-gray-400">contact@theksp.co.in</span>
+						<span class="ml-5 text-gray-400">contact@cinevibemedia.com</span>
 					</li>
 					<li>
 						<div class="flex items-center">
@@ -656,21 +784,24 @@
 								Address:
 							</span>
 						</div>
-						<span class="ml-5 text-gray-400">E BLOCK HOUSE NO 76 Basement, near PVR
-							Anupam Saket, New
-							Delhi, Delhi 110017</span>
+						<span class="ml-5 text-gray-400">Mohanagar Project
+							Road 3, Block D, House 34
+							1st Floor (Flat 202)
+						</span>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div>
 			<p class="text-white text-center py-5">© Copyright. All Right Reserved. Website Designed By <a
-					class="text-[#C1AB65] hover:text-white transition-all duration-300" href="/">SM
-					Innovative
-					Solutions</a></p>
+					class="text-[#C1AB65] hover:text-white transition-all duration-300" href="/">CV Media Solutions</a>
+			</p>
 		</div>
 	</footer>
 
+	<!-- jQuery & Slick Slider JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<!-- Custom Script -->
 	<script src="assets/js/script.js"></script>
 

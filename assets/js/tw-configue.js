@@ -15,6 +15,7 @@ tailwind.config = {
             },
             backgroundImage: {
                 'hero-pattern': "url('assets/img/page-banner/about.jpg')",
+                'testimonial': "url('assets/img/index/testimonial.jpg')"
             }
         }
     }

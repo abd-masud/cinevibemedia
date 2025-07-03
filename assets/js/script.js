@@ -49,3 +49,35 @@ document.addEventListener('click', (e) => {
         });
     }
 });
+
+$(document).ready(function () {
+    $('.slider-hero').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: false,
+        fade: true,
+    });
+
+    $('.slider-click-watch').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: false
+    });
+
+    $('.slider-testimonials').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+        dots: false,
+        // fade: true,
+        cssEase: 'linear'
+    });
+});
